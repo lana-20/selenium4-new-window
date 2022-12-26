@@ -9,6 +9,11 @@ In Selenium 3, engineers had to create a new driver object and then perform the 
 
 Selenium 4 comes with the _newWindow_ API, which lets testers create and switch to a new window/tab without creating a new WebDriver object.
 
+     # Open a new tab and switch to it
+     driver.switch_to.new_window('tab')
+
+     # Open a new window and switch to it
+     driver.switch_to.new_window('window')
 
 ----
 
