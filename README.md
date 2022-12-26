@@ -1,5 +1,7 @@
 # Selenium 4 Window/Tab Management
 
+<img src="https://user-images.githubusercontent.com/70295997/209498547-6cfc2a8f-f21f-4135-977b-2b410b3f75ed.png" width=500>
+
 A test automation engineer might need to open a particular link in a new tab or window to perform certain actions. 
 
 For example, a user wants to open new tabs inside their WebDriver. They are using Selenium for scraping website content from the apps with JavaScript elements that load upon some event tigger.
@@ -56,5 +58,7 @@ _Console Output_:
 [Open web in new tab Selenium + Python](https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python)
 
 [How to open a new blank Tab or Window - Selenium - 4 new feature](https://youtu.be/7SpCMkUKq-Y)
+
+[The WindowTypes implementation](https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.window.html)
 
 
