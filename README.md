@@ -7,9 +7,9 @@ A test automation engineer might need to open a particular link in a new tab or 
 For example, a user wants to open new tabs inside their WebDriver. They are using Selenium for scraping website content from the apps with JavaScript elements that load upon some event tigger.
  
 
-In Selenium 3, engineers had to create a new driver object and then perform the _switch_ operation using the _WindowHandle()_ method to perform consequtive steps.
+In Selenium 3, engineers had to create a new driver object and then perform the <code>switch</code> operation using the <code>WindowHandle()</code> method to perform consequtive steps.
 
-Selenium 4 comes with the _newWindow_ API, which lets testers create and switch to a new window/tab without creating a new WebDriver object.
+Selenium 4 comes with the <code>newWindow</code> API, which lets testers create and switch to a new window/tab without creating a new WebDriver object.
 
 ## Create new window (or) new tab and switch
 Create a new blank window (or) tab and focus the new window/tab on the screen. No need to switch to work with the new window/tab. 
@@ -29,14 +29,14 @@ I can open www.google.com in the initial tab and www.yahoo.com in the adjacent t
 
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     driver.get("https://www.google.com/")
-    print("Original page title is: %s %driver.title)
+    print("Original page title is: %s" %driver.title)
     original_window = driver.current_window_handle
-    print("1st window handle is: %s %original_window)
+    print("1st window handle is: %s" %original_window)
     driver.switch_to.new_window("https://www.yahoo.com/")
     WebDriverWait(driver, 5).until(EC.number_of_windows_to_be(2))
     new_window = driver.current_window_handle
-    print("New page title is: %s %driver.title)
-    print("2nd window handle is: %s %original_window)
+    print("New page title is: %s" %driver.title)
+    print("2nd window handle is: %s" %original_window)
     driver.quit()
 
 _Console Output_:
@@ -45,11 +45,6 @@ _Console Output_:
     1st window handle is: CDWindow-B2B3DE3A222B5DA3257840FA784FA780
     New page title is: Yahoo
     2nd window handle is: CDWindow-D7DA6777A0008DE91991C623105B1EC4
-
-
-
-
-
 
 ----
 
